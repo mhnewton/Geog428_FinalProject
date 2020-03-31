@@ -175,17 +175,10 @@ with ap.da.UpdateCursor(firePoly_Centres, (fireRecorded, fireYear, fireMonth), w
 
 print("\nUpdated " + fireYear + " and " + fireMonth + " Fields...")
         
-
 print("Done!")
+#Due to not having access to ArcPro due to unforeseen circumstances the remainder of the project was completed on ArcOnline and R
 
-
-
-
-
-
-
-
-
+#outline for code if I was able to continue with arcPy
 '''
 for list of years{
     for list of months{
