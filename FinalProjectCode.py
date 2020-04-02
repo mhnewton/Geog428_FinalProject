@@ -176,7 +176,7 @@ with ap.da.UpdateCursor(firePoly_Centres, (fireRecorded, fireYear, fireMonth), w
 print("\nUpdated " + fireYear + " and " + fireMonth + " Fields...")
         
 print("Done!")
-#Due to not having access to ArcPro due to unforeseen circumstances the remainder of the project was completed on ArcOnline and R
+#Due to unforeseen circumstances and not having access to ArcPro the remainder of the project was completed on ArcOnline and R
 
 #outline for code if I was able to continue with arcPy
 '''
@@ -184,7 +184,7 @@ for list of years{
     for list of months{
         copy selection (select tool) of all fires that have these years and months
         do near function #using select shapefiles
-        do IDW #using select shapefiles. put into scratch folder
+        do interpolation #using select shapefiles
         do zonal statistics
     }
 }
