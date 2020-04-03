@@ -52,7 +52,7 @@ ggplot(firePoly, aes(x=Near.AveTemp, y=SIZE_HA)) + #classify x and y, qualitativ
   annotate(geom="text", x=5, y=9, label=paste("Adj R2 = ",signif(summary(lm.model.NearTemp)$adj.r.squared, 3))) +
   annotate(geom="text", x=5, y=8, label=paste("P =",signif(summary(lm.model.NearTemp)$coef[2,4],3))) +
   stat_smooth(data = firePoly, aes(x=Near.AveTemp, y=SIZE_HA), method = lm, se = FALSE, formula = y ~ x, col = "red") +
-  labs(title = "Average Monthly Temperature vs. fire size in British Columbia 2017\nUsing Find Nearest tool", 
+  labs(title = "Average Monthly Temperature vs. Fire Size in British Columbia 2017\nUsing Find Nearest Tool", 
        x = "Monthly Temperature (°C)", 
        y = "Fire Size (log(hectares)",
        caption = "Figure 2: Scatterplot of average monthly temperature and fire size of fire incidents during 2017 in British Columbia.") + #label plot, x axis, y axis
@@ -68,7 +68,7 @@ ggplot(firePoly, aes(x=Interpolate.AveTemp, y=SIZE_HA)) + #classify x and y, qua
   annotate(geom="text", x=5, y=9, label=paste("Adj R2 = ",signif(summary(lm.model.IntTemp)$adj.r.squared, 3))) +
   annotate(geom="text", x=5, y=8, label=paste("P =",signif(summary(lm.model.IntTemp)$coef[2,4],3))) +
   stat_smooth(data = firePoly, aes(x=Near.AveTemp, y=SIZE_HA), method = lm, se = FALSE, formula = y ~ x, col = "red") +
-  labs(title = "Average Monthly Temperature vs. fire size in British Columbia 2017\nUsing Interpolation and Zonal Statistics", 
+  labs(title = "Average Monthly Temperature vs. Fire Size in British Columbia 2017\nUsing Interpolation and Zonal Statistics", 
        x = "Monthly Temperature (°C)", 
        y = "Fire Size (log(hectares)",
        caption = "Figure 3: Scatterplot of average monthly temperature and fire size of fire incidents during 2017 in British Columbia.") + #label plot, x axis, y axis
@@ -84,7 +84,7 @@ ggplot(firePoly, aes(x=Near.totalPrecip, y=SIZE_HA)) + #classify x and y, qualit
   annotate(geom="text", x=5, y=9, label=paste("Adj R2 = ",signif(summary(lm.model.NearPrecip)$adj.r.squared, 3))) +
   annotate(geom="text", x=5, y=8, label=paste("P =",signif(summary(lm.model.NearPrecip)$coef[2,4],3))) +
   stat_smooth(data = firePoly, aes(x=Near.totalPrecip, y=SIZE_HA), method = lm, se = FALSE, formula = y ~ x, col = "blue") +
-  labs(title = "Monthly Precipitation vs. fire size in British Columbia 2017\nUsing Find Nearest tool", 
+  labs(title = "Average Monthly Precipitation vs. Fire Size in British Columbia 2017\nUsing Find Nearest Tool", 
        x = "Monthly Total Precipitation (log(mm))", 
        y = "Fire Size (log(hectares)",
        caption = "Figure 4: Scatterplot of monthly total precipitation and fire size of fire incidents during 2017 in British Columbia.") + #label plot, x axis, y axis
@@ -100,7 +100,7 @@ ggplot(firePoly, aes(x=Interpolate.AvePrecip, y=SIZE_HA)) + #classify x and y, q
   annotate(geom="text", x=5, y=9, label=paste("Adj R2 = ",signif(summary(lm.model.IntPrecip)$adj.r.squared, 3))) +
   annotate(geom="text", x=5, y=8, label=paste("P =",signif(summary(lm.model.IntPrecip)$coef[2,4],3))) +
   stat_smooth(data = firePoly, aes(x=Near.totalPrecip, y=SIZE_HA), method = lm, se = FALSE, formula = y ~ x, col = "blue") +
-  labs(title = "Average Monthly Precipitation vs. fire size in British Columbia 2017\nUsing Interpolation and Zonal Statistics", 
+  labs(title = "Average Monthly Precipitation vs. Fire Size in British Columbia 2017\nUsing Interpolation and Zonal Statistics", 
        x = "Monthly Total Precipitation (log(mm))", 
        y = "Fire Size (log(hectares))",
        caption = "Figure 5: Scatterplot of average monthly temperature and fire size of fire incidents during 2017 in British Columbia.") + #label plot, x axis, y axis
