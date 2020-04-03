@@ -107,3 +107,4 @@ ggplot(firePoly, aes(x=Interpolate.AvePrecip, y=SIZE_HA)) + #classify x and y, q
   theme_classic() + #set the theme to classic (removes background and borders etc.)
   theme(plot.title = element_text(face = "bold", hjust = 0.5), plot.caption = element_text(hjust = 0)) #set title to center and bold
 dev.off()
+
