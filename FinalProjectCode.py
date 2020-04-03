@@ -78,6 +78,7 @@ for field in fieldList:
 #Due to unforeseen circumstances and not having access to ArcPro the remainder of the project was completed on ArcOnline and R
 #outline for code if I was able to continue with arcPy
 
+'''
 #summary statistics variables
 fireCentreName = ["Southeast Fire Centre", "Kamloops Fire Centre", "Cariboo Fire Centre", "Coastal Fire Centre", "Prince George Fire Centre", "Northwest Fire Centre"]
 fireCentreCount = [0] * len(fireCentreName)
@@ -179,6 +180,7 @@ print("\nUpdated " + fireYear + " and " + fireMonth + " Fields...")
         
 print("Done!")
 
+'''
 '''
 for list of years{
     for list of months{
